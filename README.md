@@ -1,6 +1,6 @@
-# CRUD Board Project
+# CRUD Board Project 💻 
 <b>KH 정보교육원 세미 프로젝트 </b></br>
-## Collaborator
+## Collaborator 👩‍💻
 <table>
   <tr>
     <td><a href="https://github.com/JuHyeong2"><img src="https://i.ibb.co/YQ5Rj8G/juhyeong.png?" width="150" /></td>
@@ -19,11 +19,11 @@
 <b>FrontEnd : </b>이주형, 강현준 </br>
 <b>BackEnd : </b>김영찬, 황성현 </br>
 
-## Project description 
+## Project Description 📝
 <b>✔ 프로젝트 명 :</b> 하모(하비 모임) </br>
 <b>✔ 목적 :</b> KH 정보 교육원에서 진행하는 세미프로젝트로 기존의 웹사이트를 벤치마킹해 취미 게시판을 A-Z까지 만들어보자! </br>
 
-## Stacks
+## Stacks 🚗🚗
 ### Enviroment
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
@@ -38,7 +38,7 @@
 ![ORACLE](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black)
 
 
-## Getting Started
+## Getting Started 🖍
 ### 개발환경
 ```
 - Window 10, 11
