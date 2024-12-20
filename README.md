@@ -1,4 +1,4 @@
-# CRUD Board Project 💻 
+# 하모 Project 💻 
 <b>KH 정보교육원 세미 프로젝트 </b></br>
 ## Collaborator 👩‍💻
 <table>
