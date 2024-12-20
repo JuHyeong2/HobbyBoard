@@ -20,7 +20,7 @@
 <b>BackEnd : </b>김영찬, 황성현 </br>
 
 ## Project description 
-<b>✔ 프로젝트 명 :</b> HobbyBoard(가제) </br>
+<b>✔ 프로젝트 명 :</b> 하모(하비 모임) </br>
 <b>✔ 목적 :</b> KH 정보 교육원에서 진행하는 세미프로젝트로 기존의 웹사이트를 벤치마킹해 취미 게시판을 A-Z까지 만들어보자! </br>
 
 ## Stacks
