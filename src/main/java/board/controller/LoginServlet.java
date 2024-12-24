@@ -10,7 +10,6 @@ import java.io.IOException;
 
 /**
  * Servlet implementation class LoginServlet
- * test pull request
  */
 @WebServlet("/login.do")
 public class LoginServlet extends HttpServlet {
