@@ -1,0 +1,270 @@
+:root {
+    --main-color: #9896D9;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white: #fff;
+    --hover-color: #7A78B8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--main-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background-color: var(--white);
+    color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* 로그인 페이지 스타일 */
+.login-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-submit-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login-options a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.login-options a:hover {
+    color: var(--hover-color);
+}
+
+/* 기존 스타일 유지 */
+.banner {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.banner h2 {
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.banner-content {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.banner-item {
+    flex: 0 0 auto;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.banner-item:hover {
+    transform: translateY(-5px);
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.sort select, .filter input[type="checkbox"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+}
+
+.board-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.post {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.post h3 {
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.status {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.status.open {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+.status.closed {
+    background-color: #ffe6e6;
+    color: #660000;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .login {
+        margin-top: 1rem;
+    }
+
+    .board-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .login-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
