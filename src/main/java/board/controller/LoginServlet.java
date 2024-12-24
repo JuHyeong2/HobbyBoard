@@ -10,11 +10,12 @@ import java.io.IOException;
 
 /**
  * Servlet implementation class LoginServlet
+ * test kim young chan
  */
 @WebServlet("/login.do")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
     /**
      * Default constructor. 
      */
