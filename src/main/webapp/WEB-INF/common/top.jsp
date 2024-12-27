@@ -6,11 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/common/top.css" type="text/css">
+<!-- <link rel="stylesheet" href="css/signup.css" type="text/css"> -->
 </head>
 <body>
 	<c:set var="rootPath" value="${pageContext.servletContext.contextPath}" scope="application"/>
-	<header>
+	<header id="top">
         <div class="logo">
             <a href="${ rootPath }">HAMO</a>
         </div>
