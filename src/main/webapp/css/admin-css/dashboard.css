@@ -1,0 +1,89 @@
+
+/* 사이드바 영역을 제외한 본문 내용 영역 */
+.content {
+  margin-left: 250px; /* 사이드바 너비만큼 여백 */
+  padding: 20px;
+  width: calc(100% - 250px); /* 나머지 공간을 차지 */
+  overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+}
+
+/* 헤더 스타일 */
+.header {
+	
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-left: 250px; /* 사이드바와 겹치지 않도록 여백 추가 */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+
+.new-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.new-button:hover {
+  background-color: #0056b3;
+}
+
+/* 통계 카드 스타일 */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .label {
+  font-size: 14px;
+  color: #888;
+}
+
+.stat-card .value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
