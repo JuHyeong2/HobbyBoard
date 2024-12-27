@@ -5,11 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/admin-css/users.css">
+
 </head>
 <body>
 	<jsp:include page="../admin/admin-main.jsp"/>
 	
-	<div>
+	<div  class="header">
 		<h1>유저 상세정보 페이지</h1>
 	</div>
 </body>
