@@ -13,10 +13,12 @@
 }
 
 body {
+	margin: 0 auto;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    
 }
 
 header {
