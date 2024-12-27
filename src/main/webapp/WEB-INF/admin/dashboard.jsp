@@ -9,7 +9,7 @@
 </head>
 <body>
 	<jsp:include page="../admin/admin-main.jsp"/>
-	
+	<div class="content"> 
 	<div class="header">
 		<div class="search-container">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -70,5 +70,6 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 </body>
 </html>
