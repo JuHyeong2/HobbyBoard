@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* ===== 회원가입 페이지 스타일 ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.signup-container h2 {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--main-color-light);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus {
+    outline: none;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 2px var(--main-color-light);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    accent-color: var(--main-color);
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* 휴대폰 번호와 인증번호 입력 필드 스타일 */
+.form-group.phone-group,
+.form-group.verification-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group.phone-group input,
+.form-group.verification-group input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group.phone-group button,
+.form-group.verification-group button {
+    align-self: flex-start;
+}
+
+.send-verification,
+.verify-code,
+.resend-code {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 인증번호 확인과 재전송 버튼을 가로로 배치 */
+.verification-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-submit-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.send-verification:hover,
+.verify-code:hover,
+.resend-code:hover,
+.signup-submit-btn:hover {
+    background-color: var(--main-color-dark);
+}

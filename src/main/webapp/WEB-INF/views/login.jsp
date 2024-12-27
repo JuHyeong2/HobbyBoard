@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAMO - 로그인</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/views/login.css">
     
 </head>
 <body>
@@ -24,11 +24,15 @@
                     <label for="password">비밀번호</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">로그인 상태 유지</label>
+                </div>
                 <button type="submit" class="login-submit-btn">로그인</button>
             </form>
             <div class="login-options">
-                <a href="#" class="signup-btn">회원가입</a>
-                <a href="#" class="forgot-btn">아이디/비밀번호 찾기</a>
+                <a href="${ rootPath }/signup.do" class="signup-link">회원가입</a>
+                <a href="${ rootPath }/findId.do" class="forgot-password">아이디/비밀번호 찾기</a>
             </div>
         </div>
     </main>

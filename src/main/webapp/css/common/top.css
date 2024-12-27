@@ -1,0 +1,76 @@
+@charset "UTF-8";
+:root {
+    --main-color: #9896D9;
+    --main-color-dark: #7A78B8;
+    --main-color-light: #B6B4E5;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white: #fff;
+    --hover-color: var(--main-color-dark);
+}
+
+/* ===== 탑 섹션 스타일 (로고, 메뉴바, 로그인 버튼) ===== */
+header {
+    background-color: var(--main-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 로고 스타일 */
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.05);
+}
+
+/* 메뉴바 스타일 */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* 로그인 버튼 스타일 */
+.login-btn {
+    background-color: var(--white);
+    color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
+}
