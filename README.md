@@ -14,7 +14,7 @@
     <th><a href="https://github.com/tjdgusghkd"/>황성현</th>
     <th><a href="https://github.com/khjun98"/>강현준</th>
     <th><a href="https://github.com/JuHyeong2"/>이주형</th>
-    <th><a href="https://github.com/AhnChaeJin"/>이채진</th>
+    <th><a href="https://github.com/AhnChaeJin"/>안채진</th>
   </tr>
 </table>
 
