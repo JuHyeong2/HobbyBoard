@@ -14,12 +14,12 @@
     <th><a href="https://github.com/tjdgusghkd"/>황성현</th>
     <th><a href="https://github.com/khjun98"/>강현준</th>
     <th><a href="https://github.com/JuHyeong2"/>이주형</th>
-    <th><a href="https://github.com/AhnChaeJin"/>이채진</th>
+    <th><a href="https://github.com/AhnChaeJin"/>안채진</th>
   </tr>
 </table>
 
 ## Project description 🧑‍💻
-<b>✔ 프로젝트 명 :</b> CRUD Board </br>
+<b>✔ 프로젝트 명 :</b> HAMO </br>
 <b>✔ 목적 :</b> KH정보 교육원 세미프로젝트에서 취미 게시판을 A-Z까지 만들어보자. </br>
 
 ## Stacks 📝

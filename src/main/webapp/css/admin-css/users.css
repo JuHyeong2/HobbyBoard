@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.header {
+  margin-left: 250px; /* 사이드바 너비만큼 여백 */
+  padding: 20px;
+  width: calc(100% - 250px); /* 나머지 공간을 차지 */
+  overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+}
