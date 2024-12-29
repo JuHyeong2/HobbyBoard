@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 .header {
-  margin-left: 250px; /* 사이드바 너비만큼 여백 */
-  padding: 20px;
-  width: calc(100% - 250px); /* 나머지 공간을 차지 */
-  overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+    margin-left: 250px; /* 사이드바 너비만큼 여백 */
+    padding: 20px;
+    width: calc(100% - 250px); /* 나머지 공간을 차지 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 */
 }
 
 .content-wrapper {
@@ -22,9 +22,9 @@
     color: #333;
 }
 
-.search-bar {
-    margin-left: 20px;
-    margin-bottom: 20px;
+.search-bar {    
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .search-bar input {
@@ -41,8 +41,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-
-
 
 .user-info h2 {
     font-size: 20px;

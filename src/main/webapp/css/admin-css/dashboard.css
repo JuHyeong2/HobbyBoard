@@ -47,7 +47,7 @@
 
 .graph-bar .bar {
   width: 100%;
-  background-color: black;
+  background-color: #2c3e50;
   border-radius: 4px 4px 0 0;
   transition: height 0.3s ease; /* 높이 변경 애니메이션 */
 }
@@ -81,7 +81,7 @@ table {
 }
 
 table thead th {
-  background-color: black;
+  background-color: #2c3e50;
   color: white;
   padding: 10px;
   text-align: left;
