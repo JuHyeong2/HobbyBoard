@@ -12,7 +12,8 @@
 </head>
 <body>
     <div class="sidebar">
-        <h1 class="HAMO">HAMO</h1>
+        <h1 class="HAMO">HAMO-ADMIN</h1>
+        <div class="sideMain">
         <nav>
             <a href="${pageContext.servletContext.contextPath}/admin_DashBoardServlet.do">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
@@ -34,7 +35,15 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                 공지사항
             </a>
+            <a href="${pageContext.servletContext.contextPath }/login.do">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  					<path d="M3 9L12 2L21 9V21H3V9Z" />
+  					<path d="M9 21V12H15V21" />
+				</svg>
+				로그인 페이지
+            </a>
         </nav>
+        </div>
     </div>   
     <main>
     
