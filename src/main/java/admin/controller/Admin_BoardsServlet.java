@@ -1,4 +1,4 @@
-package board.controller;
+package admin.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,16 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class adminPageServelt
+ * Servlet implementation class Admin_BoardsServlet
  */
-@WebServlet("/adminPageServelt.do")
-public class AdminPageServelt extends HttpServlet {
+@WebServlet("/admin_BoardsServlet.do")
+public class Admin_BoardsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AdminPageServelt() {
+    public Admin_BoardsServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,7 @@ public class AdminPageServelt extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/admin/admin-main.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/admin/boards.jsp").forward(request, response);
 	}
 
 	/**
