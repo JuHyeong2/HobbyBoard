@@ -103,8 +103,16 @@
     cursor: pointer;
 }
 
+
+#tab01{
+	display: block;
+/* 	display: none; */
+	
+}
+
 #tab02{
 	display: none;	
+/* 	display: block;	 */
 }
 /*tab css*/
 .tab{float:left; width:600px; height:290px;}

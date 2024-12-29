@@ -27,40 +27,36 @@ label {
     color: #555;
 }
 
+/* 폼 그룹에 대한 스타일 */
+.form-group {
+    margin-bottom: 20px;
+}
+
 /* 카테고리와 지역을 나란히 배치 */
-.category-location-row {
+.flex-row {
     display: flex;
     justify-content: space-between;
-    margin: 5px 0 20px;
+    gap: 20px;
 }
 
-/* 카테고리와 지역을 나란히 배치 */
-.category, .location {
-    width: 48%; /* 두 항목이 같은 크기로 나누어짐 */
-    display: block; /* 레이블을 블록 요소로 설정하여 위에 배치 */
+/* 각 선택 박스 그룹 */
+.select-group {
+    width: 48%;
 }
 
-/* 카테고리와 지역의 레이블과 입력칸을 세로로 배치 */
-.category label, .category select,
-.location label, .location select {
-
-}
-
-.category select, .location select {
-    margin-top: 5px; /* 레이블과 입력칸 간격을 띄움 */
-}
-
-/* 입력 폼 스타일 */
-input, textarea, select {
+select, input[type="text"], input[type="number"], textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 20px;
+    margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
 }
 
-/* 버튼 스타일 */
+textarea {
+    resize: vertical;
+}
+
 button {
     padding: 10px 20px;
     background-color: #9896D9;
@@ -75,7 +71,6 @@ button:hover {
     background-color: #7A78B8;
 }
 
-/* 내비게이션 스타일 */
 .navigation {
     margin-top: 30px;
     text-align: center;
@@ -87,11 +82,9 @@ button:hover {
     color: white;
     padding: 10px 20px;
     background-color: #9896D9;
-    border: none;
     border-radius: 4px;
 }
 
 .navigation a:hover {
     background-color: #7A78B8;
-    color: white;
 }

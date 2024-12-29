@@ -36,7 +36,6 @@ input, textarea, select {
     font-size: 16px;
 }
 
-
 button {
     padding: 10px 20px;
     background-color: #9896D9;
@@ -49,4 +48,25 @@ button {
 
 button:hover {
     background-color: #7A78B8;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for category and location */
+.category-location-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category, .location {
+    width: 48%;  /* Both category and location take up roughly half of the row */
+}
+
+/* Optional: To make form inputs visually consistent */
+input[type="number"] {
+    width: 48%;
 }
