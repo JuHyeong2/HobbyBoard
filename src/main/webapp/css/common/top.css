@@ -13,7 +13,8 @@
 header {
     background-color: var(--main-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* 위아래 패딩을 줄여서 높이 감소 */
+    height: 4rem; /* 원하는 고정 높이 설정 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +22,7 @@ header {
     top: 0;
     z-index: 1000;
 }
+
 
 /* 로고 스타일 */
 .logo a {
@@ -41,18 +43,24 @@ nav ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0; /* ul 기본 마진 제거 */
+    padding: 0; /* ul 기본 패딩 제거 */
 }
 
 nav ul li {
-    margin: 0.5rem;
+    margin: 0.3rem 0.5rem; /* 메뉴 항목 간격 축소 */
 }
 
 nav ul li a {
     color: var(--white);
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem; /* 버튼 크기 증가 */
+    font-size: 1rem; /* 폰트 크기 증가 */
     border-radius: 5px;
+    display: flex; /* 텍스트와 아이콘을 가로로 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
 }
 
 nav ul li a:hover {
@@ -62,15 +70,94 @@ nav ul li a:hover {
 
 /* 로그인 버튼 스타일 */
 .login-btn {
-    background-color: var(--white);
-    color: var(--main-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    background-color: var(--main-color);  /* 로그인 버튼 배경색 */
+    color: var(--white);  /* 로그인 버튼 텍스트 색상 */
+    padding: 0.8rem 1.4rem;  /* 패딩을 조정하여 크기 증가 */
+    font-size: 1rem;  /* 폰트 크기 */
+    border-radius: 5px;  /* 둥근 모서리 */
+    display: flex;  /* 텍스트와 아이콘을 가로로 정렬 */
+    align-items: center;  /* 세로 중앙 정렬 */
+    gap: 0.6rem;  /* 텍스트와 아이콘 사이 간격 설정 */
+    text-decoration: none;  /* 링크의 기본 밑줄 제거 */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* 호버 시 효과 */
+    cursor: pointer;  /* 마우스 커서를 포인터로 설정 */
+    min-width: 140px;  /* 버튼의 최소 너비 설정 */
 }
 
+/* 로그인 버튼 호버 효과 */
 .login-btn:hover {
-    background-color: var(--hover-color);
-    color: var(--white);
+    background-color: var(--main-color-dark);  /* 호버 시 배경색 변화 */
+    transform: scale(1.05);  /* 호버 시 버튼이 커지도록 설정 */
 }
+
+/* SVG 아이콘 크기 조정 */
+.login-btn svg {
+    width: 18px;  /* 아이콘 크기 조정 */
+    height: 18px;
+}
+
+/* 버튼에 마우스를 올렸을 때 아이콘 색상 변경 */
+.login-btn:hover svg {
+    stroke: var(--white);  /* 아이콘 색상 변경 */
+}
+
+
+/* ===== 내 정보 수정 및 로그아웃 버튼 스타일 ===== */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* 버튼들이 가로로 정렬되도록 */
+    align-items: center; /* 버튼들 세로 가운데 정렬 */
+    margin-top: 1rem;
+}
+
+.info-toggle-btn,
+.logout-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.4rem; /* 패딩 크기 증가 */
+    font-size: 1rem; /* 폰트 크기 증가 */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* transform 효과 추가 */
+    min-width: 140px; /* 최소 너비 설정 */
+    justify-content: center; /* 버튼 내 텍스트 및 아이콘 가로 정렬 */
+    margin-bottom: 12px;
+}
+
+.info-toggle-btn:hover,
+.logout-btn:hover {
+    background-color: var(--main-color-dark);
+    transform: scale(1.05); /* hover 시 버튼이 커지도록 설정 */
+}
+
+/* SVG 아이콘 크기 조정 */
+.info-toggle-btn svg,
+.logout-btn svg {
+    width: 22px; /* SVG 크기 유지 */
+    height: 22px;
+}
+
+/* 버튼에 마우스를 올렸을 때 색상 변화 */
+.info-toggle-btn:hover svg,
+.logout-btn:hover svg {
+    stroke: var(--white);
+}
+
+/* 카테고리 버튼을 로고 오른쪽에 배치 */
+.category-btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #7A78B8;
+    border-radius: 5px;
+    margin-left: 20px; /* 로고와 버튼 사이 간격 */
+    position: relative; /* 카테고리 버튼 위치 기준 설정 */
+}
+
+

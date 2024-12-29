@@ -103,6 +103,9 @@
     cursor: pointer;
 }
 
+#tab02{
+	display: none;	
+}
 /*tab css*/
 .tab{float:left; width:600px; height:290px;}
 .tabnav{font-size:0; width:600px; border:1px solid #ddd;}
