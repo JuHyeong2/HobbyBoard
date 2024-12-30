@@ -1,19 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="css/common/top.css" type="text/css">
-<!-- <link rel="stylesheet" href="css/signup.css" type="text/css"> -->
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="css/common/top.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/signup.css" type="text/css"> -->
 </head>
 <body>
-	<c:set var="rootPath" value="${pageContext.servletContext.contextPath}" scope="application"/>
-	<header id="top">
+    <c:set var="rootPath" value="${pageContext.servletContext.contextPath}" scope="application" />
+    <header id="top">
         <div class="logo">
-            <a href="${ rootPath }">HAMO</a>
+            <a href="${rootPath}">HAMO</a>
         </div>
         <nav>
             <ul>
@@ -30,9 +29,32 @@
                 <li><a href="#">심리/자기계발</a></li>
             </ul>
         </nav>
-        <div class="login">
-            <a href="${ rootPath }/login.do" class="login-btn">로그인</a>
-        </div>
+        <%-- <a href="${rootPath}/login.do" class="login-btn"> 
+    		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        		<circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 -->
+        		<line x1="12" y1="6" x2="12" y2="12" /> <!-- 전원 아이콘의 세로선 -->
+        		<line x1="12" y1="18" x2="12" y2="18" /> <!-- 전원 아이콘의 세로선 아래쪽 -->
+    		</svg> 로그인 --%>
+		</a>
+        <!-- 버튼 추가 -->
+           <div class="button-container">
+            <!-- 내 정보 수정 버튼 -->
+            <a href="/profile" class="info-toggle-btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4" /> <!-- 머리 부분 -->
+                    <path d="M12 14C8.69 14 5.5 15.79 5.5 18V20H18.5V18C18.5 15.79 15.31 14 12 14Z" /> <!-- 몸통 부분 -->
+                </svg> 내 정보
+            </a>
+
+            <!-- 로그아웃 버튼 -->
+            <a href="/logout" class="logout-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 -->
+                    <line x1="12" y1="6" x2="12" y2="12" /> <!-- 전원 아이콘의 세로선 -->
+                </svg>
+                로그아웃
+            </a>
+        </div> 
     </header>
 </body>
 </html>

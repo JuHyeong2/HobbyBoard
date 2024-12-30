@@ -8,16 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class Admin_DashBaordServlet
+ * Servlet implementation class BoardDetails
  */
-@WebServlet("/admin_DashBoardServlet.do")
-public class Admin_DashBaordServlet extends HttpServlet {
+@WebServlet("/boardDetails.do")
+public class BoardDetails extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Admin_DashBaordServlet() {
+    public BoardDetails() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,7 @@ public class Admin_DashBaordServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/admin/dashboard.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/board/boardPage.jsp").forward(request, response);
 	}
 
 	/**
