@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+/* #a{ */
+/*     font-family: 'Inter', sans-serif; */
+/*     margin: 0; */
+/*     padding: 0; */
+/*     display: flex; */
+/*     height: 100vh; */
+/* } */
+=======
 /* 전체 레이아웃 설정 */
 
 .HAMO {
@@ -5,6 +15,7 @@
 	margin-top: 30px;
 	margin-left: 15px;
 }
+>>>>>>> 9d5e3e0888eb5da23666c73bbf5a56a963a6b93f
 
 * {
   margin: 0;
