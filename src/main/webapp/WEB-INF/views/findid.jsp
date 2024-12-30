@@ -13,11 +13,11 @@
 	<main>
 		<div class="tab">
 			<ul class="tabnav">
-				<li><a href="#tab01">이메일</a></li>
-				<li><a href="#tab02">휴대폰</a></li>
+				<li><a href="#tab01" class="tab2">이메일</a></li>
+				<li><a href="#tab02" class="tab2">휴대폰</a></li>
 			</ul>
 			<div class="tabcontent">
-				<div id="tab01">
+				<div id="tab01" class="tab-1">
 			        <div class="find-id-container">
 			            <h2>아이디 찾기</h2>
 			            <form id="find-id-form" class="find-id-form">
@@ -33,7 +33,7 @@
 			            </form>
 			        </div>
 		        </div>
-		        <div id="tab02">
+		        <div id="tab02" class="tab-1">
 			        <div class="find-id-container">
 			            <h2>아이디 찾기</h2>
 			            <form id="find-id-form" class="find-id-form">
