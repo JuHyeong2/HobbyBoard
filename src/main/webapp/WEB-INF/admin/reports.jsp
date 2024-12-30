@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,4 +92,20 @@
 		</div>
 	</div>
 </body>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// resolve-btn 클래스의 모든 버튼을 선택
+
+		// 각 버튼에 클릭 이벤트 리스너 추가
+		var buttons = document.querySelectorAll('.resolve-btn');
+
+		for (let button of buttons) {
+		    button.addEventListener('click', () => {
+		        // 클릭 시 index.jsp로 이동
+		        window.location.href = 'boardDetails.do';
+		    });
+		}
+
+	});
+</script>
 </html>
