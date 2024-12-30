@@ -9,42 +9,46 @@
 </head>
 <body>
 <jsp:include page="../common/top.jsp"></jsp:include>
-
-
-	
+<body>
     <div class="container">
-        <h1>게시글 제목</h1>
-
-        <div class="post">
-            <h2 class="post-title">게시글 작성자: <span>케로로 중사</span></h2>
-            <div class="post-category">카테고리: <span>기술</span></div>
-            <hr/>
+        <article class="post">
+            <header class="post-header">
+                <img src="${post.authorProfileImage}" alt="프로필 사진" class="profile-image">
+                <div class="post-meta">
+                    <h1 class="post-title">${post.title}</h1>
+                    <p class="post-info">
+                        <span class="post-date">${post.createdAt}</span>
+                        <span class="post-views">조회수: ${post.views}</span>
+                    </p>
+                </div>
+            </header>
             <div class="post-content">
-                <p>최근 기술의 발전은 정말 빠르게 이루어지고 있습니다. AI와 머신러닝, 그리고 자율주행차 등 다양한 분야에서 혁신적인 변화가 일어나고 있습니다.</p>
-                <p>이 글에서는 최신 기술 동향에 대해 다루고 있으며, 특히 인공지능 기술이 어떻게 발전하고 있는지, 그리고 그것이 우리가 일상에서 어떻게 활용될 수 있는지를 설명합니다.</p>
+                ${post.content}
             </div>
-        </div>
+            <footer class="post-footer">
+                <button class="btn btn-primary" id="participateBtn">참가하기</button>
+                <% if (isAuthor) { %>
+                    <button class="btn btn-secondary" id="editBtn">게시글 수정</button>
+                <% } %>
+            </footer>
+        </article>
 
-        <div class="navigation">
-            <a href="index.jsp">목록으로 돌아가기</a>
-            <a href="${ rootPath }/editBoardServlet.do" class="edit-button">게시글 수정</a>
-            
-        </div>
-        
-        <div class="delete-post">
-            <form action="/delete_post" method="POST" onsubmit="return confirmDeletion()">
-                <button type="submit" class="delete-button">게시글 삭제</button>
+        <section class="comments">
+            <h2>댓글</h2>
+            <ul class="comment-list">
+                <% for (Comment comment : comments) { %>
+                    <li class="comment">
+                        <p class="comment-author">${comment.author}</p>
+                        <p class="comment-content">${comment.content}</p>
+                        <p class="comment-date">${comment.createdAt}</p>
+                    </li>
+                <% } %>
+            </ul>
+            <form class="comment-form" action="submitComment" method="POST">
+                <textarea name="commentContent" placeholder="댓글을 입력하세요" required></textarea>
+                <button type="submit" class="btn btn-primary">댓글 작성</button>
             </form>
-        </div>
+        </section>
     </div>
-    
-    <script>
-        function confirmDeletion() {
-            return confirm("정말로 게시글을 삭제하시겠습니까?");
-        }
-    </script>
- 
-    
-    
 </body>
 </html>
