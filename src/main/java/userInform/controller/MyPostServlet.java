@@ -1,4 +1,4 @@
-package src.main.java.userInform.controller;
+package userInform.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -26,7 +26,7 @@ public class MyPostServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/lib/user-inform/myPost.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/user-inform/myPost.jsp").forward(request, response);
 	}
 
 	/**

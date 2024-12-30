@@ -33,8 +33,8 @@
                 <button type="submit" class="login-submit-btn">로그인</button>
             </form>
             <div class="login-options">
-                <a href="${ rootPath }/signup.do">회원가입</a>
-                <a href="${ rootPath }/findId.do">아이디/비밀번호 찾기</a>
+                <a href="${ pageContext.servletContext.contextPath }/signup.do">회원가입</a>
+                <a href="${ pageContext.servletContext.contextPath }/findId.do">아이디/비밀번호 찾기</a>
             </div>
         </div>
     </main>

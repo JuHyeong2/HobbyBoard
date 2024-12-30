@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="css/admin-css/dashboard.css">
 </head>
 <body>
+
+	<jsp:include page="../admin/admin-main.jsp"/>
+
+	
+
 	<div class="content">
 		<jsp:include page="../admin/admin-main.jsp"/>
 
@@ -66,5 +71,6 @@
 			</table>
 		</div>
 	</div>
+
 </body>
 </html>

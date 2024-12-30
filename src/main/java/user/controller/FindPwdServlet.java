@@ -1,5 +1,6 @@
-package board.controller;
+package user.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,16 +9,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class BoardDetails
+ * Servlet implementation class findPwdServlet
  */
-@WebServlet("/boardDetails.do")
-public class BoardDetails extends HttpServlet {
+@WebServlet("/findpwd.do")
+public class FindPwdServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BoardDetails() {
+    public FindPwdServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +27,8 @@ public class BoardDetails extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/board/boardPage.jsp").forward(request, response);
+		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/findpwd.jsp");
+		view.forward(request, response);
 	}
 
 	/**

@@ -1,4 +1,4 @@
-package src.main.java.user.controller;
+package user.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -12,13 +12,13 @@ import java.io.IOException;
  * Servlet implementation class findIdViewServlet
  */
 @WebServlet("/findId.do")
-public class findIdViewServlet extends HttpServlet {
+public class FindIdViewServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public findIdViewServlet() {
+    public FindIdViewServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

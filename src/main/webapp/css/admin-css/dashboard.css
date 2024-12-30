@@ -1,8 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
 /* 전체 레이아웃 설정 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 /* 사이드바 영역을 제외한 본문 내용 영역 */

@@ -38,8 +38,12 @@ header {
 }
 
 /* 메뉴바 스타일 */
+nav{
+	background-color: var(--main-color);
+}
 nav ul {
     display: flex;
+    background-color: var(--main-color);
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,7 +61,7 @@ nav ul li a {
     transition: all 0.3s ease;
     padding: 0.6rem 1rem; /* 버튼 크기 증가 */
     font-size: 1rem; /* 폰트 크기 증가 */
-    border-radius: 5px;
+/*     border-radius: 5px; */
     display: flex; /* 텍스트와 아이콘을 가로로 정렬 */
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 정렬 */
@@ -66,6 +70,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
+    border-radius: 5px;
 }
 
 /* 로그인 버튼 스타일 */
@@ -160,4 +165,42 @@ nav ul li a:hover {
     position: relative; /* 카테고리 버튼 위치 기준 설정 */
 }
 
+/* 메뉴바 드롭다운 */
+.dropdown-category:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+	background-color: var(--main-color-dark);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: var(--main-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
