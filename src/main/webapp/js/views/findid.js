@@ -47,23 +47,34 @@ document.addEventListener('DOMContentLoaded', function() {
 	//		tabcontent.children.getElementsByTagName('div').style.display = "hide";
 	//		
 	//	}
-	document.addEventListener('DOMContentLoaded', () => {
-	    const tab1 = document.getElementById("tab01");
-	    const tab2 = document.getElementById("tab02");
+	
+//	document.addEventListener('DOMContentLoaded', () => {
+//	    const tab1 = document.getElementById("tab01");
+//	    const tab2 = document.getElementById("tab02");
 
+		const tab_2 = document.getElementsByClassName("tab2");
+		const tab_1 = document.getElementsByClassName("tab-1");
+		tab_2[0].addEventListener('click', ()=>{
+			tab_1[0].style.display= 'block';
+			tab_1[1].style.display= 'none';
+		});
+		tab_2[1].addEventListener('click', ()=>{
+			tab_1[1].style.display= 'block';
+			tab_1[0].style.display= 'none';
+		});
 
 
 	    // tab1 클릭 이벤트
-	    tab1.addEventListener('click', () => {
-	        tab1.style.display = "block";  // tab1 보이게
-	        tab2.style.display = "none";   // tab2 숨기기
-	    });
-
-	    // tab2 클릭 이벤트
-	    tab2.addEventListener('click', () => {
-	        tab2.style.display = "block";  // tab2 보이게
-	        tab1.style.display = "none";   // tab1 숨기기
-	    });
-	});
+//	    tab1.addEventListener('click', () => {
+//	        tab1.style.display = "block";  // tab1 보이게
+//	        tab2.style.display = "none";   // tab2 숨기기
+//	    });
+//
+//	    // tab2 클릭 이벤트
+//	    tab2.addEventListener('click', () => {
+//	        tab2.style.display = "block";  // tab2 보이게
+//	        tab1.style.display = "none";   // tab1 숨기기
+//	    });
+//	});
 });
 
