@@ -1,4 +1,4 @@
-package src.main.java.admin.controller;
+package admin.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

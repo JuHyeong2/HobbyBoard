@@ -1,4 +1,4 @@
-package src.main.java.user.controller;
+package user.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;

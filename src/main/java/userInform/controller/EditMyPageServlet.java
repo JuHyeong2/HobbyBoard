@@ -1,4 +1,4 @@
-package src.main.java.userInform.controller;
+package userInform.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
