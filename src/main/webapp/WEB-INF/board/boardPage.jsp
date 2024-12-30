@@ -11,7 +11,7 @@
 <jsp:include page="../common/top.jsp"></jsp:include>
 <body>
     <div class="container">
-    <h2 class="post-title">게시글 제목</h2>
+    <p class="post-title">게시글 제목</p>
         <article class="post">
             <header class="post-header">
                 <img src="${post.authorProfileImage}" alt="프로필 사진" class="profile-image">
