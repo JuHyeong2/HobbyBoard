@@ -19,6 +19,14 @@
 
 </head>
 <body>
+
+
+
+	<jsp:include page="../admin/admin-main.jsp"/>
+
+	
+
+
 	<div class="content">
 		<jsp:include page="../admin/admin-main.jsp" />
 		<h1>DASHBOARD</h1>	
@@ -79,6 +87,7 @@
 
 
 	</div>
+
 	<script>
 	document.addEventListener('DOMContentLoaded', function() {
 	    var calendarEl1 = document.getElementById('calendar1');
@@ -131,6 +140,7 @@
 
 
 </script>
+
 
 </body>
 </html>

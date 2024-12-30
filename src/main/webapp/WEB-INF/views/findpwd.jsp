@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
+    <title>비밀번호 찾기</title>
     <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/views/findid.css">
     <style>
 /*     body { */
@@ -22,15 +22,13 @@
      } */
      .tabs { 
        display: flex; 
-       gap: 0;
-       justify-content: center;  
+       justify-content: center; 
        
 /*        margin-bottom: 20px;  */
      } 
      .tabs button { 
-       flex: 1;  
-       padding: 10px;   
-       margin: 0;
+       flex: 1; 
+       padding: 10px;  
        border: 0px solid #ccc;
        background-color: #ffffff; 
        cursor: pointer; 
@@ -74,13 +72,16 @@
 	
     <div class="container">
     
-    	<!-- 이거 탭 간격좀 없애줘 시발.... -->
 	    <div class="tabs">
 	      <button class="tab-link active" onclick="openForm('email')">이메일</button>
 	      <button class="tab-link" onclick="openForm('phone')">휴대폰</button>
 	    </div>
 	    <div id="email" class="find-id-container active">
-			<form id="find-id-form" class="find-id-form">
+			<form action="${ rootPath }/newpwd.do" id="find-id-form" class="find-id-form">
+				<div class="form-group">
+				    <label for="id">아이디</label>
+				    <input type="text" id="id" name="id" required>
+				</div>
 				<div class="form-group">
 				    <label for="name">이름</label>
 				    <input type="text" id="name" name="name" required>
@@ -89,11 +90,15 @@
 				    <label for="email">이메일</label>
 				    <input type="email"  name="email" required>
 				</div>
-				<button type="submit" class="find-id-submit-btn">아이디 찾기</button>
+				<button type="submit" class="find-id-submit-btn">비밀번호 찾기</button>
 			</form>
 	    </div>
 	    <div id="phone" class="find-id-container">
-	      	<form id="find-id-form" class="find-id-form">
+	      	<form action="${ rootPath }/newpwd.do" id="find-id-form" class="find-id-form">
+	      		<div class="form-group">
+				    <label for="id">아이디</label>
+				    <input type="text" id="id" name="id" required>
+				</div>
 				<div class="form-group">
 				    <label for="name">이름</label>
 				    <input type="text" id="name" name="name" required>
@@ -102,7 +107,7 @@
 				    <label for="phone">휴대폰 번호</label>
 				    <input type="tel" id="phone" name="phone" required>
 				</div>
-				<button type="submit" class="find-id-submit-btn">아이디 찾기</button>
+				<button type="submit" class="find-id-submit-btn">비밀번호 찾기</button>
 			</form>
 	    </div>
   	</div>
