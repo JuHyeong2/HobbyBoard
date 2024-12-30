@@ -1,4 +1,4 @@
-package board.controller;
+package src.main.java.board.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
