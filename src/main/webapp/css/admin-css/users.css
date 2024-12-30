@@ -1,3 +1,4 @@
+/* 기존의 기본 스타일 유지 */
 @charset "UTF-8";
 
 .header {
@@ -28,7 +29,7 @@
 }
 
 .search-bar input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -60,6 +61,7 @@
     padding: 15px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* userNo 위치를 기준으로 설정 */
 }
 
 .info-item {
@@ -101,4 +103,51 @@
     .info-item {
         font-size: 14px;
     }
+}
+
+/* .userNo 위치 설정 */
+.userNo {
+    position: absolute;
+    top: 10px;   /* 상단에서 10px */
+    left: 10px;  /* 좌측에서 10px */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);  /* 배경을 약간 투명하게 설정 */
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* 토글 버튼 스타일 */
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* 액션 버튼 (활성화, 비활성화) 숨기기 */
+.actions {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.actions button:hover {
+    background-color: #ddd;
 }

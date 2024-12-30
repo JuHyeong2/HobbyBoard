@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 @charset "UTF-8";
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -12,13 +12,14 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 32px;
-=======
+}
+
 /* 전체 레이아웃 설정 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
->>>>>>> 9d5e3e0888eb5da23666c73bbf5a56a963a6b93f
+
 }
 
 /* 사이드바 영역을 제외한 본문 내용 영역 */
@@ -112,4 +113,84 @@ table tbody td {
 
 table tbody tr:hover {
   background-color: #f1f1f1;
+}
+
+.table-container {
+    width: 100%; /* 전체 컨테이너의 너비를 100%로 설정 */
+}
+
+/* 캘린더 두 개를 가로로 배치 */
+.calendar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* 캘린더 간의 간격을 10px로 설정 */
+}
+
+/* 각 캘린더를 위한 컨테이너 */
+.calendar-container {
+    position: relative; /* 제목과 캘린더를 함께 배치하기 위해 상대적 위치 설정 */
+    width: 45%; /* 캘린더 너비를 45%로 설정 */
+    height: 350px; /* 캘린더 높이 설정 */
+    
+}
+
+/* 제목 텍스트 스타일 및 투명 배경 설정 */
+.calendar-title {
+    position: absolute; /* 제목을 절대 위치로 설정 */
+    top: 15px; /* 상단에 위치 */
+    left: 65px; /* 왼쪽에 위치 */
+    font-size: 14px; /* 제목 텍스트 크기 */
+    font-weight: bold; /* 제목 텍스트 두껍게 */
+    background-color: rgba(255, 255, 255, 0.6); /* 배경을 반투명하게 설정 */
+    padding: 5px; /* 텍스트 주변 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+/* 캘린더 크기 조정 */
+#calendar1, #calendar2 {
+    width: 100%; /* 캘린더 너비를 100%로 설정 */
+    height: 100%; /* 캘린더 높이 설정 */
+}
+
+/* 헤더의 버튼들(이전, 다음, 오늘) 크기 줄이기 */
+.fc-button {
+    font-size: 8px; /* 버튼 텍스트 크기 */
+    padding: 4px 8px; /* 버튼의 패딩(여백) 조정 */
+}
+
+/* 캘린더 제목 텍스트 크기 줄이기 및 가운데 정렬 */
+.fc-toolbar-title {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 8px; /* 제목 텍스트 크기 */
+}
+
+/* 캘린더 헤더에서 날짜와 버튼들 사이의 간격 줄이기 */
+.fc-header-toolbar {
+    margin-bottom: 2px; /* 헤더와 본문 사이의 간격을 더 좁게 조정 */
+}
+
+/* 월/주/일 버튼 크기 줄이기 */
+.fc-header-toolbar .fc-button-group {
+    font-size: 10px; /* 월/주/일 버튼의 텍스트 크기 */
+    padding: 20px;
+}
+
+/* 월/주/일 버튼의 간격을 줄이기 */
+.fc-header-toolbar .fc-button-group button {
+    padding: 4px 6px; /* 버튼 간격 조정 */
+}
+
+/* 날짜 셀 크기 줄이기 */
+.small-day .fc-daygrid-day-number {
+    font-size: 10px;  /* 날짜 텍스트 크기 줄이기 */
+}
+
+/* 캘린더의 텍스트 크기 줄이기 */
+.fc-toolbar-title {
+    font-size: 11px;  /* 월 제목 크기 줄이기 */
+}
+
+.fc-button {
+    font-size: 8px;  /* 버튼 텍스트 크기 줄이기 */
+    padding: 4px 8px;  /* 버튼 크기 줄이기 */
 }

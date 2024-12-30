@@ -12,12 +12,37 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-right: 200px;
 }
 
 .header h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+}
+
+/* 검색 입력창 스타일 */
+.search-bar {
+    margin-left: 250px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 680px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* board-list에 flex 속성을 사용하여 한 행에 4개씩 나열 */
@@ -37,7 +62,19 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    position: relative; /* 토글 버튼을 우측 상단에 배치할 기준이 됨 */
+    position: relative; /* boardNo 위치를 기준으로 설정 */
+}
+
+.boardNo {
+    position: absolute;
+    top: 10px;   /* 상단에서 10px */
+    left: 10px;  /* 좌측에서 10px */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);  /* 배경을 약간 투명하게 설정 */
+    padding: 3px 6px;
+    border-radius: 5px;
 }
 
 .board-item {
@@ -53,6 +90,7 @@
 
 .author {
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .title {
@@ -78,7 +116,7 @@
     }
 }
 
-/* 토글버튼 CSS */
+/* 토글 버튼 CSS */
 .toggle-btn {
     position: absolute; /* 우측 상단에 배치하기 위해 절대 위치 사용 */
     top: 10px;

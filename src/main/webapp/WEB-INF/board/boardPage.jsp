@@ -26,22 +26,22 @@
                 ${post.content}
             </div>
             <footer class="post-footer">
-<!--                 <button class="btn btn-primary" id="participateBtn">참가하기</button> -->
+                <button class="btn btn-primary" id="participateBtn">참가하기</button>
 <%--                 <% if (isAuthor) { %> --%>
-<!--                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button> -->
+                    <button class="btn btn-secondary" id="editBtn">게시글 수정</button>
 <%--                 <% } %> --%>
-<!--             </footer> -->
-<!--         </article> -->
+            </footer>
+        </article>
 
-<!--         <section class="comments"> -->
-<!--             <h2>댓글</h2> -->
-<!--             <ul class="comment-list"> -->
+        <section class="comments">
+            <h2>댓글</h2>
+            <ul class="comment-list">
 <%--                 <% for (Comment comment : comments) { %> --%>
-<!--                     <li class="comment"> -->
-<%--                         <p class="comment-author">${comment.author}</p> --%>
-<%--                         <p class="comment-content">${comment.content}</p> --%>
-<%--                         <p class="comment-date">${comment.createdAt}</p> --%>
-<!--                     </li> -->
+                    <li class="comment">
+                        <p class="comment-author">${comment.author}</p>
+                        <p class="comment-content">${comment.content}</p>
+                        <p class="comment-date">${comment.createdAt}</p>
+                    </li>
 <%--                 <% } %> --%>
             </ul>
             <form class="comment-form" action="submitComment" method="POST">

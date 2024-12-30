@@ -23,14 +23,12 @@
                     <h3>공지 제목 1</h3>
                     <p>공지 내용: 시스템 점검이 예정되어 있습니다. 사용자에게 미리 안내해주세요.</p>
                     <p>작성자: 관리자1 | 작성일: 2024-12-25</p>
-                    <button class="button">읽음</button>
                 </div>
 
                 <div class="notice-item">
                     <h3>공지 제목 2</h3>
                     <p>공지 내용: 규정 변경에 대한 중요한 내용입니다. 반드시 확인해주세요.</p>
                     <p>작성자: 관리자2 | 작성일: 2024-12-20</p>
-                    <button class="button">읽음</button>
                 </div>
                 <!-- 추가적인 공지 항목들 -->
             </div>
@@ -57,14 +55,20 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.getElementById('toggle-notice-form');
-            const noticeCreate = document.getElementById('notice-create');
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggle-notice-form');
+        const noticeCreate = document.getElementById('notice-create');
 
-            toggleButton.addEventListener('click', () => {
-                noticeCreate.classList.toggle('hidden');
-            });
+        toggleButton.addEventListener('click', () => {
+            // display 속성의 값이 'block'이면 'none'으로, 'none'이면 'block'으로 변경
+            if (noticeCreate.style.display === 'none') {
+                noticeCreate.style.display = 'block';
+            } else {
+                noticeCreate.style.display = 'none';
+            }
         });
+    });
+
     </script>
 </body>
 </html>
