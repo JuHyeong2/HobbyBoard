@@ -26,7 +26,7 @@ public class EditMyPageServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/lib/user-inform/editMyPage.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/user-inform/editMyPage.jsp").forward(request, response);
 	}
 
 	/**
