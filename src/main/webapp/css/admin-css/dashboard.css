@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
 @charset "UTF-8";
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -13,6 +17,10 @@ body{
     align-items: center;
     margin-bottom: 32px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
 /* 전체 레이아웃 설정 */
 * {
   margin: 0;

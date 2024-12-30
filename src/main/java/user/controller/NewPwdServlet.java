@@ -9,16 +9,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class findIdViewServlet
+ * Servlet implementation class NewPwdServlet
  */
-@WebServlet("/findId.do")
-public class FindIdViewServlet extends HttpServlet {
+@WebServlet("/newpwd.do")
+public class NewPwdServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FindIdViewServlet() {
+    public NewPwdServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class FindIdViewServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/findid.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/newpwd.jsp");
 		view.forward(request, response);
 	}
 

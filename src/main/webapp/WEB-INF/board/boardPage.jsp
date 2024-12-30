@@ -29,6 +29,12 @@
             </div>
             <footer class="post-footer">
                 <button class="btn btn-primary" id="participateBtn">참가하기</button>
+<<<<<<< HEAD
+=======
+<%--                 <% if (isAuthor) { %> --%>
+<!--                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button> -->
+<%--                 <% } %> --%>
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
             </footer>
         </article>
 
@@ -36,11 +42,19 @@
             <h2>댓글</h2>
             <ul class="comment-list">
 <%--                 <% for (Comment comment : comments) { %> --%>
+<<<<<<< HEAD
                     <li class="comment">
                         <p class="comment-author">${comment.author}</p>
                         <p class="comment-content">${comment.content}</p>
                         <p class="comment-date">${comment.createdAt}</p>
                     </li>
+=======
+<!--                     <li class="comment"> -->
+<%--                         <p class="comment-author">${comment.author}</p> --%>
+<%--                         <p class="comment-content">${comment.content}</p> --%>
+<%--                         <p class="comment-date">${comment.createdAt}</p> --%>
+<!--                     </li> -->
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
 <%--                 <% } %> --%>
             </ul>
             <form class="comment-form" action="submitComment" method="POST">

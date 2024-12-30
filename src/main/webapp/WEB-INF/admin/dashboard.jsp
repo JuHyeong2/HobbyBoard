@@ -9,7 +9,13 @@
 <body>
 
 	<jsp:include page="../admin/admin-main.jsp"/>
+<<<<<<< HEAD
 	
+=======
+
+	
+
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
 	<div class="content">
 		<jsp:include page="../admin/admin-main.jsp"/>
 
@@ -69,5 +75,9 @@
 			</table>
 		</div>
 	</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75aa59ac198b2ff52d6cbc337dee214776c8af6b
 </body>
 </html>
