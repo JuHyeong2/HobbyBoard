@@ -147,10 +147,10 @@ body {
 .login-submit-btn {
     background-color: var(--main-color);
     color: var(--white);
-    padding: 1rem;
+    padding: 0.8rem;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -170,8 +170,6 @@ body {
     flex: 0.45; /* 버튼의 너비를 조정 */
     text-align: center;
     padding: 0.8rem; /* 버튼 크기 축소 */
-    background-color: var(--main-color);
-    color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 1rem; /* 폰트 크기 축소 */
@@ -181,22 +179,8 @@ body {
 }
 
 .login-options a:hover {
-    background-color: var(--main-color-dark);
+     color: var(--main-color-dark); /* 텍스트 색상 변경 */
+    text-decoration: underline; /* 텍스트에 밑줄 추가 (선택 사항) */
 }
 
-.guest-option {
-    text-align: center;
-    margin-top: 1rem;
-}
 
-.guest-option .guest-access {
-    color: var(--main-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.guest-option .guest-access:hover {
-    color: var(--main-color-dark);
-    font-weight: bold;
-}
