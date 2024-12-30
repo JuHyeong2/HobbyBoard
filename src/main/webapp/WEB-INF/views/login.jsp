@@ -33,11 +33,8 @@
                 <button type="submit" class="login-submit-btn">로그인</button>
             </form>
             <div class="login-options">
-                <a href="${ rootPath }/signup.do" class="signup-link">회원가입</a>
-                <a href="${ rootPath }/findId.do" class="forgot-password">아이디/비밀번호 찾기</a>
-            </div>
-            <div class="guest-option">
-                <a href="${ rootPath }" class="guest-access">비회원으로 이용하기</a>
+                <a href="${ rootPath }/signup.do">회원가입</a>
+                <a href="${ rootPath }/findId.do">아이디/비밀번호 찾기</a>
             </div>
         </div>
     </main>
