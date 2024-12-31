@@ -86,7 +86,7 @@ nav ul li a:hover {
     text-decoration: none;  /* 링크의 기본 밑줄 제거 */
     transition: background-color 0.3s ease, transform 0.3s ease;  /* 호버 시 효과 */
     cursor: pointer;  /* 마우스 커서를 포인터로 설정 */
-    min-width: 140px;  /* 버튼의 최소 너비 설정 */
+    min-width: 90px;  /* 버튼의 최소 너비 설정 */
 }
 
 /* 로그인 버튼 호버 효과 */
@@ -129,7 +129,7 @@ nav ul li a:hover {
     gap: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease; /* transform 효과 추가 */
-    min-width: 140px; /* 최소 너비 설정 */
+    min-width: 90px; /* 최소 너비 설정 */
     justify-content: center; /* 버튼 내 텍스트 및 아이콘 가로 정렬 */
     margin-bottom: 12px;
 }
@@ -185,7 +185,7 @@ nav ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 80%;
   background-color: var(--main-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
