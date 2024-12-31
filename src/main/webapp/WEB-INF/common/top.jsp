@@ -31,8 +31,8 @@
 		                <a href="#">심리/자기계발</a>
 	                </div>
 	            </li>
-	            <li><a href="#">공지사항</a></li>
-	            <li><a href="#">사이트소개</a></li>
+	            <li><a href="${ rootPath }/annoBoard.do">공지사항</a></li>
+	            <li><a href="${ rootPath }/siteIntro.do">사이트소개</a></li>
             </ul>
         </nav>
         <a href="${rootPath}/login.do" class="login-btn"> 
