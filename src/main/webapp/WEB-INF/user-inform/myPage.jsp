@@ -5,14 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 정보</title>
+    <title>내 정보 페이지</title>
     <link rel="stylesheet" href="css/user-inform/style.css">
+    <link rel="stylesheet" href="css/common/top.css">
 </head>
 <body>
+	<header id="top">
+		<div class ="logo">
+			<a href="${pageContext.servletContext.contextPath}">HAMO</a>
+		</div>
+	</header>
+	<div class="main-container">
     <jsp:include page="sideBar.jsp" />
+    <div class="content-wrapper">
     <div class="container">
         <div class="content">
-            <h1>내 정보</h1>
+            <h1>MY PAGE</h1>
             <div class="info-item">
                 <label for="name">이름</label>
                 <input type="text" id="name" name="name" value="홍길동" readonly>
@@ -45,10 +53,12 @@
                 <label for="phone">휴대폰 번호</label>
                 <input type="tel" id="phone" name="phone" value="010-1234-5678" readonly>
             </div>
-           <form action="${pageContext.request.contextPath}/editMyPage" method="get">
+           <form action="${pageContext.request.contextPath}/CheckPwd" method="get">
                 <button type="submit" class="edit-button">수정하기</button>
             </form>
         </div>
     </div>
+   </div>
+   </div>
 </body>
 </html>

@@ -1,23 +1,63 @@
 @charset "UTF-8";
+
+
+#top {
+    background-color: #9896D9;
+/* 	background-color: var(--main-color); */
+/*     box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+/*     justify-content: flex-start; */
+	justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+.logo a {
+	font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.logo a:hover {
+    transform: scale(1.05);
+}
+
+
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Do Hyeon", serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f0f2f5;
     color: #333;
     display: flex;
+    
+    min-height: 100vh;
 }
 
 .sidebar {
+	
+	top:60px;
+	
     width: 200px;
     background-color: #9896D9;
     color: white;
     height: 100vh;
-    position: fixed;
+	position: fixed; 
     left: 0;
-    top: 0;
-    padding: 20px;
+    top: 4rem;
+/*     padding : 20px; */
+	padding: 1rem;
+    overflow-y: auto;
+    
 }
 
 .sidebar nav ul {
@@ -30,24 +70,46 @@ body {
 }
 
 .sidebar nav ul li a {
+	font-family: "Arial", serif;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: opacity 0.3s;
+    font-weight: bold;
+    padding: 0.5rem;
 }
 
-.sidebar nav ul li a:hover {
-    opacity: 0.8;
+.sidebar nav ul li a:hover{
+/*     opacity: 0.8; */
+   background-color: #7A78AE;
+    font-weight: bold;
 }
+
+
+.main-container {
+    display: flex;
+    margin-top: 60px;
+}
+
+.content-wrapper {
+    flex: 1;
+    margin-left: 200px;
+    padding: 2rem;
+}
+
 
 .container {
+/* 	max-width: 2000px; */
+	width:	700px;
+	margin: 0 auto;
     flex-grow: 1;
-    margin-left: 200px;
-    padding: 20px;
+    margin-left: 280px;
+    padding: 30px;
+/*     margin-top: 5px; */
 }
 
 .content {
-    max-width: 800px;
+    max-width: 2000px;
     margin: 0 auto;
     background-color: #fff;
     padding: 30px;
@@ -56,6 +118,7 @@ body {
 }
 
 h1 {
+	font-family: "Arial", serif;
     text-align: center;
     color: #9896D9;
     margin-bottom: 30px;
@@ -63,12 +126,12 @@ h1 {
 
 /* Styles for mypage.jsp */
 .info-item {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     font-weight: bold;
     color: #9896D9;
 }
@@ -78,7 +141,7 @@ input[type="password"],
 input[type="email"],
 input[type="tel"] {
     width: 100%;
-    padding: 10px;
+    padding: 0.5rem;
     border: 1px solid #d1d1d1;
     border-radius: 4px;
     box-sizing: border-box;
@@ -88,8 +151,8 @@ input[type="tel"] {
 .edit-button {
     display: block;
     width: 200px;
-    margin: 30px auto 0;
-    padding: 12px;
+    margin: 2rem auto 0;
+    padding: 0.5rem;
     background-color: #9896D9;
     color: white;
     border: none;
@@ -107,8 +170,8 @@ input[type="tel"] {
 .activity {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     transition: box-shadow 0.3s ease;
 }
 
@@ -132,6 +195,7 @@ input[type="tel"] {
     justify-content: space-between;
     font-size: 0.9em;
     color: #666;
+   
 }
 
 .activity-category {
@@ -142,16 +206,18 @@ input[type="tel"] {
     font-size: 0.8em;
 }
 
+
+
+
 /* Styles for myPost.jsp */
 .post {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
-
 .post:hover {
     box-shadow: 0 0 15px rgba(152, 150, 217, 0.2);
 }
@@ -184,17 +250,17 @@ input[type="tel"] {
 
 .participants {
     display: none;
-    margin-top: 15px;
+    margin-top: 1rem;
     border-top: 1px solid #e0e0e0;
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 .participant {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .participant-info {
@@ -204,6 +270,7 @@ input[type="tel"] {
 .participant-actions {
     display: flex;
     justify-content: flex-end;
+    margin-top: 0.5rem;
 }
 
 .accept-btn, .reject-btn {
