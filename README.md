@@ -10,11 +10,11 @@
     <td><a href="https://github.com/AhnChaeJin"><img src="https://i.ibb.co/rH7b7s4/cheajin.png" width="100px"/></a></td>
   </tr>
   <tr>
-    <th><a href="https://github.com/cold-glass"/>김영찬</th>
-    <th><a href="https://github.com/tjdgusghkd"/>황성현</th>
-    <th><a href="https://github.com/khjun98"/>강현준</th>
-    <th><a href="https://github.com/JuHyeong2"/>이주형</th>
-    <th><a href="https://github.com/AhnChaeJin"/>안채진</th>
+    <th><a href="https://github.com/cold-glass"/>Glass</th>
+    <th><a href="https://github.com/tjdgusghkd"/>Brown</th>
+    <th><a href="https://github.com/khjun98"/>James</th>
+    <th><a href="https://github.com/JuHyeong2"/>Jonathan</th>
+    <th><a href="https://github.com/AhnChaeJin"/>Hunter</th>
   </tr>
 </table>
 

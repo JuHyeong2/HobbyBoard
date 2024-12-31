@@ -25,6 +25,12 @@
                 <!-- User 1 -->
                 <article class="user-card">
                     <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
                     <ul class="user-info">
                         <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
                         <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
@@ -37,60 +43,112 @@
                 </article>
                 
                 <!-- User 2 -->
-                <article class="user-card">
-                    <h3 class="user-name">김철수</h3>
+                <!-- 동일한 구조 반복 -->
+                 <article class="user-card">
+                    <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
                     <ul class="user-info">
-                        <li><span class="label">아이디:</span> <span class="value">kim456</span></li>
-                        <li><span class="label">이메일:</span> <span class="value">kim456@example.com</span></li>
-                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-9876-5432</span></li>
-                        <li><span class="label">닉네임:</span> <span class="value">철수</span></li>
+                        <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
+                        <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
+                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1234-5678</span></li>
+                        <li><span class="label">닉네임:</span> <span class="value">길동이</span></li>
                         <li><span class="label">활동 여부:</span> <span class="value">활성</span></li>
-                        <li><span class="label">가입일:</span> <span class="value">2023-02-20</span></li>
-                        <li><span class="label">거주 지역:</span> <span class="value">부산광역시</span></li>
+                        <li><span class="label">가입일:</span> <span class="value">2023-01-15</span></li>
+                        <li><span class="label">거주 지역:</span> <span class="value">서울특별시</span></li>
                     </ul>
                 </article>
-
-                <!-- User 3 -->
-                <article class="user-card">
-                    <h3 class="user-name">이영희</h3>
+                 <article class="user-card">
+                    <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
                     <ul class="user-info">
-                        <li><span class="label">아이디:</span> <span class="value">lee789</span></li>
-                        <li><span class="label">이메일:</span> <span class="value">lee789@example.com</span></li>
-                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1111-2222</span></li>
-                        <li><span class="label">닉네임:</span> <span class="value">영희</span></li>
-                        <li><span class="label">활동 여부:</span> <span class="value">비활성</span></li>
-                        <li><span class="label">가입일:</span> <span class="value">2023-03-10</span></li>
-                        <li><span class="label">거주 지역:</span> <span class="value">대구광역시</span></li>
+                        <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
+                        <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
+                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1234-5678</span></li>
+                        <li><span class="label">닉네임:</span> <span class="value">길동이</span></li>
+                        <li><span class="label">활동 여부:</span> <span class="value">활성</span></li>
+                        <li><span class="label">가입일:</span> <span class="value">2023-01-15</span></li>
+                        <li><span class="label">거주 지역:</span> <span class="value">서울특별시</span></li>
                     </ul>
                 </article>
-                
-                <article class="user-card">
-                    <h3 class="user-name">이영희</h3>
+                 <article class="user-card">
+                    <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
                     <ul class="user-info">
-                        <li><span class="label">아이디:</span> <span class="value">lee789</span></li>
-                        <li><span class="label">이메일:</span> <span class="value">lee789@example.com</span></li>
-                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1111-2222</span></li>
-                        <li><span class="label">닉네임:</span> <span class="value">영희</span></li>
-                        <li><span class="label">활동 여부:</span> <span class="value">비활성</span></li>
-                        <li><span class="label">가입일:</span> <span class="value">2023-03-10</span></li>
-                        <li><span class="label">거주 지역:</span> <span class="value">대구광역시</span></li>
+                        <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
+                        <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
+                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1234-5678</span></li>
+                        <li><span class="label">닉네임:</span> <span class="value">길동이</span></li>
+                        <li><span class="label">활동 여부:</span> <span class="value">활성</span></li>
+                        <li><span class="label">가입일:</span> <span class="value">2023-01-15</span></li>
+                        <li><span class="label">거주 지역:</span> <span class="value">서울특별시</span></li>
                     </ul>
                 </article>
-                
-                <article class="user-card">
-                    <h3 class="user-name">이영희</h3>
+                 <article class="user-card">
+                    <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
                     <ul class="user-info">
-                        <li><span class="label">아이디:</span> <span class="value">lee789</span></li>
-                        <li><span class="label">이메일:</span> <span class="value">lee789@example.com</span></li>
-                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1111-2222</span></li>
-                        <li><span class="label">닉네임:</span> <span class="value">영희</span></li>
-                        <li><span class="label">활동 여부:</span> <span class="value">비활성</span></li>
-                        <li><span class="label">가입일:</span> <span class="value">2023-03-10</span></li>
-                        <li><span class="label">거주 지역:</span> <span class="value">대구광역시</span></li>
+                        <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
+                        <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
+                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1234-5678</span></li>
+                        <li><span class="label">닉네임:</span> <span class="value">길동이</span></li>
+                        <li><span class="label">활동 여부:</span> <span class="value">활성</span></li>
+                        <li><span class="label">가입일:</span> <span class="value">2023-01-15</span></li>
+                        <li><span class="label">거주 지역:</span> <span class="value">서울특별시</span></li>
+                    </ul>
+                </article>
+                 <article class="user-card">
+                    <h3 class="user-name">홍길동</h3>
+                    <span class="userNo">No.178</span>
+                    <div class="toggle-button">...</div> <!-- 토글 버튼 추가 -->
+                    <div class="actions" style="display: none;">
+                        <button class="activate-btn">활성화</button>
+                        <button class="deactivate-btn">비활성화</button>
+                    </div>
+                    <ul class="user-info">
+                        <li><span class="label">아이디:</span> <span class="value">hong123</span></li>
+                        <li><span class="label">이메일:</span> <span class="value">hong123@example.com</span></li>
+                        <li><span class="label">휴대폰 번호:</span> <span class="value">010-1234-5678</span></li>
+                        <li><span class="label">닉네임:</span> <span class="value">길동이</span></li>
+                        <li><span class="label">활동 여부:</span> <span class="value">활성</span></li>
+                        <li><span class="label">가입일:</span> <span class="value">2023-01-15</span></li>
+                        <li><span class="label">거주 지역:</span> <span class="value">서울특별시</span></li>
                     </ul>
                 </article>
             </div>
         </section>
     </main>
+
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const actions = this.nextElementSibling;
+                if (actions.style.display === 'none' || actions.style.display === '') {
+                    actions.style.display = 'block';
+                } else {
+                    actions.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

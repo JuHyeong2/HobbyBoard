@@ -1,6 +1,5 @@
-package user.controller;
+package board.controller;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -9,16 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class findIdViewServlet
+ * Servlet implementation class SiteIntroServlet
  */
-@WebServlet("/findId.do")
-public class FindIdViewServlet extends HttpServlet {
+@WebServlet("/siteIntro.do")
+public class SiteIntroServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FindIdViewServlet() {
+    public SiteIntroServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,8 +26,7 @@ public class FindIdViewServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/findid.jsp");
-		view.forward(request, response);
+		request.getRequestDispatcher("WEB-INF/board/siteIntro.jsp").forward(request, response);
 	}
 
 	/**
