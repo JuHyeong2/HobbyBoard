@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>게시글 수정</title>
     <link rel="stylesheet" href="css/board/editBoardDetails.css">
+
 </head>
 <body>
     <jsp:include page="../common/top.jsp"></jsp:include>
@@ -50,23 +51,27 @@
                         <option value="geumcheon">금천구</option>
                     </select>
                 </div>
+                
+                <div class="form-group">
+                	<label for="participation">참여인원</label>
+                	<input type="number" id="participation" name="participation" required placeholder="참여인원">
+            	</div>
             </div>
 
-            <div class="form-group">
-                <label for="participation">참여인원</label>
-                <input type="number" id="participation" name="participation" required placeholder="참여인원을 입력하세요">
-            </div>
+            
 
             <div class="form-group">
                 <label for="content">게시글 내용</label>
                 <textarea id="content" name="content" rows="10" required placeholder="게시글 내용을 입력하세요">최근 기술의 발전은 정말 빠르게 이루어지고 있습니다. AI와 머신러닝, 그리고 자율주행차 등 다양한 분야에서 혁신적인 변화가 일어나고 있습니다.</textarea>
             </div>
 
-            <button type="submit">수정 완료</button>
+            <div class="navigation">
+            	<a href="boardDetails.do">수정</a>
+        	</div>
         </form>
 
         <div class="navigation">
-            <a href="post_detail.html">상세 보기로 돌아가기</a>
+            <a href="boardDetails.do">목록</a>
         </div>
     </div>
 </body>

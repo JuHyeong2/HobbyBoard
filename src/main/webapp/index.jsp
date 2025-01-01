@@ -20,6 +20,15 @@
                 <div class="banner-item">인기 게시물 3</div>
             </div>
         </section>
+        
+        <section class="banner">
+            <h2>공지</h2>
+            <div class="banner-content">
+                <div class="banner-item">공지 1</div>
+                <div class="banner-item">공지 2</div>
+                <div class="banner-item">공지 3</div>
+            </div>
+        </section>
 
         <section class="board">
             <div class="board-header">

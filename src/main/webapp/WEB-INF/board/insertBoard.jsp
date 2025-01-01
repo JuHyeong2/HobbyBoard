@@ -8,16 +8,17 @@
 </head>
 <body>
     <jsp:include page="../common/top.jsp"></jsp:include>
+
     <div class="container">
         <h1>게시글 작성</h1>
-        <form action="/submit_post" method="POST">
+        <form action="/update_post" method="POST">
             <div class="form-group">
                 <label for="title">게시글 제목</label>
-                <input type="text" id="title" name="title" required placeholder="게시글 제목을 입력하세요">
+                <input type="text" id="title" name="title" value="기술 관련 최신 동향" required placeholder="게시글 제목을 입력하세요">
             </div>
 
-            <div class="category-location-row">
-                <div class="form-group">
+            <div class="form-group flex-row">
+                <div class="select-group">
                     <label for="category">게시글 카테고리</label>
                     <select id="category" name="category" required>
                         <option value="">카테고리를 선택하세요</option>
@@ -35,7 +36,7 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="select-group">
                     <label for="location">지역</label>
                     <select id="location" name="location">
                         <option value="">지역을 선택하세요</option>
@@ -49,19 +50,23 @@
                         <option value="geumcheon">금천구</option>
                     </select>
                 </div>
+                
+                <div class="form-group">
+                	<label for="participation">참여인원</label>
+                	<input type="number" id="participation" name="participation" required placeholder="참여인원">
+            	</div>
             </div>
 
-            <div class="form-group">
-                <label for="">참여인원</label>
-                <input type="number" required placeholder="참여인원을 입력하세요">
-            </div>
+            
 
             <div class="form-group">
                 <label for="content">게시글 내용</label>
-                <textarea id="content" name="content" rows="20" required placeholder="게시글 내용을 입력하세요"></textarea>
+                <textarea id="content" name="content" rows="10" required placeholder="게시글 내용을 입력하세요">최근 기술의 발전은 정말 빠르게 이루어지고 있습니다. AI와 머신러닝, 그리고 자율주행차 등 다양한 분야에서 혁신적인 변화가 일어나고 있습니다.</textarea>
             </div>
 
-            <button type="submit">게시글 작성</button>
+            <div class="navigation">
+            	<a href="boardDetails.do">게시글 작성</a>
+        	</div>
         </form>
     </div>
 </body>

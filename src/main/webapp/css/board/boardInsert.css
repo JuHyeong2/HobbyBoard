@@ -27,14 +27,37 @@ label {
     color: #555;
 }
 
-input, textarea, select {
+/* 폼 그룹에 대한 스타일 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* 카테고리와 지역을 나란히 배치 */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* 각 선택 박스 그룹 */
+.select-group {
+    width: 48%;
+}
+
+select, input[type="text"], input[type="number"], textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 20px;
+    margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
 }
+
+textarea {
+    resize: vertical;
+}
+
+
 
 button {
     padding: 10px 20px;
@@ -50,23 +73,41 @@ button:hover {
     background-color: #7A78B8;
 }
 
-/* Form group styling */
-.form-group {
-    margin-bottom: 20px;
+.navigation {
+    margin-top: 30px;
+    text-align: right;
 }
 
-/* Flexbox container for category and location */
-.category-location-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #9896D9;
+    border-radius: 4px;
 }
 
-.category, .location {
-    width: 48%;  /* Both category and location take up roughly half of the row */
+.navigation a:hover {
+    background-color: #7A78B8;
 }
 
-/* Optional: To make form inputs visually consistent */
-input[type="number"] {
-    width: 48%;
-}
+/* /* Form group styling */ 
+/* .form-group { */
+/*     margin-bottom: 20px; */
+/* } */
+
+/* /* Flexbox container for category and location */ 
+/* .category-location-row { */
+/*     display: flex; */
+/*     justify-content: space-between; */
+/*     gap: 20px; */
+/* } */
+
+/* .category, .location { */
+/*     width: 48%;  Both category and location take up roughly half of the row */
+/* } */
+
+/* /* Optional: To make form inputs visually consistent */ 
+/* input[type="number"] { */
+/*     width: 48%; */
+/* } */

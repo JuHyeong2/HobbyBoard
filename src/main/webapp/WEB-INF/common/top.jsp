@@ -35,33 +35,33 @@
 	            <li><a href="#">사이트소개</a></li>
             </ul>
         </nav>
-        <a href="${rootPath}/login.do" class="login-btn"> 
-    		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        		<circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 -->
-        		<line x1="12" y1="6" x2="12" y2="12" /> 전원 아이콘의 세로선
-        		<line x1="12" y1="18" x2="12" y2="18" /> 전원 아이콘의 세로선 아래쪽
-    		</svg> 로그인 
-		</a>
+<%--         <a href="${rootPath}/login.do" class="login-btn">  --%>
+<!--     		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+<%--         		<circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 --> --%>
+<!--         		<line x1="12" y1="6" x2="12" y2="12" /> 전원 아이콘의 세로선 -->
+<!--         		<line x1="12" y1="18" x2="12" y2="18" /> 전원 아이콘의 세로선 아래쪽 -->
+<!--     		</svg> 로그인  -->
+<!-- 		</a> -->
 		
         <!-- 버튼 추가 -->
-<!--         <div class="button-container"> -->
+        <div class="button-container">
 <!--             내 정보 수정 버튼 -->
-<!--             <a href="/profile" class="info-toggle-btn">  -->
-<!--                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
-<%--                     <circle cx="12" cy="8" r="4" /> <!-- 머리 부분 --> --%>
-<!--                     <path d="M12 14C8.69 14 5.5 15.79 5.5 18V20H18.5V18C18.5 15.79 15.31 14 12 14Z" /> 몸통 부분 -->
-<!--                 </svg> 내 정보 -->
-<!--             </a> -->
+            <a href="/profile" class="info-toggle-btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4" /> <!-- 머리 부분 -->
+                    <path d="M12 14C8.69 14 5.5 15.79 5.5 18V20H18.5V18C18.5 15.79 15.31 14 12 14Z" /> 몸통 부분
+                </svg> 내 정보
+            </a>
 
 <!--             로그아웃 버튼 -->
-<!--             <a href="/logout" class="logout-btn"> -->
-<!--                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
-<%--                     <circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 --> --%>
-<!--                     <line x1="12" y1="6" x2="12" y2="12" /> 전원 아이콘의 세로선 -->
-<!--                 </svg> -->
-<!--                 로그아웃 -->
-<!--             </a> -->
-<!--         </div>  -->
+            <a href="/logout" class="logout-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" /> <!-- 전원 버튼 외각 -->
+                    <line x1="12" y1="6" x2="12" y2="12" /> 전원 아이콘의 세로선
+                </svg>
+                로그아웃
+            </a>
+        </div> 
 
 		<!-- 아이디찾기 때 탑바 -->
 <!-- 		<nav> -->

@@ -4,12 +4,13 @@ body {
     color: #333;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 50%;
+    margin: 50px auto;
+    padding: 2rem;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -19,7 +20,7 @@ body {
 .post-header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .profile-image {
@@ -34,7 +35,7 @@ body {
 }
 
 .post-title {
-    margin: 0 0 5px 0;
+    margin: 0;
     font-size: 20px;
 }
 
@@ -45,6 +46,11 @@ body {
 
 .post-date, .post-views {
     margin-right: 15px;
+}
+
+.participant {
+	 text-align: right;
+	 color:#666;
 }
 
 .post-content {
@@ -66,12 +72,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #9896D9;
     color: #fff;
 }
 
 .btn-secondary {
-    background-color: #6c757d;
+    background-color: #9896D9;
     color: #fff;
     margin-left: 10px;
 }
@@ -95,12 +101,12 @@ body {
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .comment-author {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .comment-date {
@@ -116,4 +122,22 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     resize: vertical;
+}
+
+.navigation {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #9896D9;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background-color: #7A78B8;
 }
