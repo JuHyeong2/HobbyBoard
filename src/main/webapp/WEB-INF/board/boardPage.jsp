@@ -38,7 +38,15 @@
             <div class="navigation">
                 <button class="btn btn-primary" id="participateBtn">참가하기</button>
 <%--                 <% if (isAuthor) { %> --%>
+<<<<<<< HEAD
                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button>
+=======
+
+                    <button class="btn btn-secondary" id="editBtn">게시글 수정</button>
+
+<!--                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button> -->
+
+>>>>>>> 039aeacdff67c647226b4ecc50e44ac6037a7fa2
 <%--                 <% } %> --%>
 			</div>
             </footer>
@@ -48,6 +56,7 @@
             <h2>댓글</h2>
             <ul class="comment-list">
 <%--                 <% for (Comment comment : comments) { %> --%>
+<<<<<<< HEAD
                     <li class="comment">
                         <p class="comment-author">아무게</p>
                         <p class="comment-content">곧 새해입니다</p>
@@ -58,6 +67,22 @@
                         <p class="comment-content">행복한 하루다</p>
                         <p class="comment-date">24.12.29</p>
                     </li>
+=======
+
+                    <li class="comment">
+                        <p class="comment-author">${comment.author}</p>
+                        <p class="comment-content">${comment.content}</p>
+                        <p class="comment-date">${comment.createdAt}</p>
+                    </li>
+
+<!--                     <li class="comment"> -->
+<%--                         <p class="comment-author">${comment.author}</p> --%>
+<%--                         <p class="comment-content">${comment.content}</p> --%>
+<%--                         <p class="comment-date">${comment.createdAt}</p> --%>
+<!--                     </li> -->
+
+<%--                 <% } %> --%>
+>>>>>>> 039aeacdff67c647226b4ecc50e44ac6037a7fa2
             </ul>
             <form class="comment-form" action="submitComment" method="POST">
                 <textarea name="commentContent" placeholder="댓글을 입력하세요" required></textarea>

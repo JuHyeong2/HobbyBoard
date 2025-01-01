@@ -50,19 +50,6 @@ body {
     color: #555;
 }
 
-.notice-item .button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 8px 12px;
-    margin-top: 10px;
-}
-
-.notice-item .button:hover {
-    background-color: #0056b3;
-}
 
 /* 공지 작성 버튼 */
 .toggle-button {
@@ -89,6 +76,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 30px;
+    display: none;
 }
 
 .notice-create h2 {
