@@ -29,9 +29,13 @@
                 <button class="btn btn-primary" id="participateBtn">참가하기</button>
 <%--                 <% if (isAuthor) { %> --%>
 
+<!--                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button> -->
+=======
+
                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button>
 
 <!--                     <button class="btn btn-secondary" id="editBtn">게시글 수정</button> -->
+
 
 <%--                 <% } %> --%>
             </footer>
@@ -39,6 +43,10 @@
 
         <section class="comments">
             <h2>댓글</h2>
+
+<!--             <ul class="comment-list"> -->
+<%--                 <% for (Comment comment : comments) { %> --%>
+=======
             <ul class="comment-list">
 <%--                 <% for (Comment comment : comments) { %> --%>
 
@@ -48,6 +56,7 @@
                         <p class="comment-date">${comment.createdAt}</p>
                     </li>
 
+
 <!--                     <li class="comment"> -->
 <%--                         <p class="comment-author">${comment.author}</p> --%>
 <%--                         <p class="comment-content">${comment.content}</p> --%>
@@ -55,7 +64,12 @@
 <!--                     </li> -->
 
 <%--                 <% } %> --%>
+<!--             </ul> -->
+=======
+
+<%--                 <% } %> --%>
             </ul>
+
             <form class="comment-form" action="submitComment" method="POST">
                 <textarea name="commentContent" placeholder="댓글을 입력하세요" required></textarea>
                 <button type="submit" class="btn btn-primary">댓글 작성</button>

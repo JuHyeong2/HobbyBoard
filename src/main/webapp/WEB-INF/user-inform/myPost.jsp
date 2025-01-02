@@ -5,14 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내가 쓴 게시글</title>
+    <title>내가 쓴 게시글 </title>
     <link rel="stylesheet" href="css/user-inform/style.css">
+    <link rel="stylesheet" href="css/common/top.css">
 </head>
 <body>
+<header id="top">
+		<div class ="logo">
+			<a href="${pageContext.servletContext.contextPath}">HAMO</a>
+		</div>
+	</header>
+	<div class="main-container">
     <jsp:include page="sideBar.jsp" />
+    <div class="content-wrapper">
     <div class="container">
         <div class="content">
-            <h1>내가 쓴 게시글</h1>
+            <h1>MY POST</h1>
             
             <div class="post" onclick="toggleParticipants(this)">
                 <div class="post-title">주말 등산 모임</div>
@@ -98,6 +106,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <script>

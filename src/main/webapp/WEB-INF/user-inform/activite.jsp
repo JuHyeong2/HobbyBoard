@@ -7,12 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내가 참여한 활동</title>
     <link rel="stylesheet" href="css/user-inform/style.css">
+    <link rel="stylesheet" href="css/common/top.css">
 </head>
 <body>
+	<header id="top">
+		<div class ="logo">
+			<a href="${pageContext.servletContext.contextPath}">HAMO</a>
+		</div>
+	</header>
+	<div class="main-container">
     <jsp:include page="sideBar.jsp" />
+     <div class="content-wrapper">
     <div class="container">
         <div class="content">
-            <h1>내가 참여한 활동</h1>
+            <h1>MY ACTIVITY</h1>
             
             <div class="activity">
                 <div class="activity-title">지역 공원 청소 봉사</div>
@@ -59,6 +67,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 </html>

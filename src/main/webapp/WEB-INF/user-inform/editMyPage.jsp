@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 정보 수정</title>
     <link rel="stylesheet" href="css/user-inform/style.css">
+    <link rel="stylesheet" href="css/common/top.css">
 </head>
 <body>
+	<header id="top">
+		<div class ="logo">
+			<a href="${pageContext.servletContext.contextPath}">HAMO</a>
+		</div>
+	</header>
+	<div class="main-container">
     <jsp:include page="sideBar.jsp" />
+    <div class="content-wrapper">
     <div class="container">
         <div class="content">
             <form id="editForm" action="editMyPage" method="post" class="edit-form">
@@ -50,12 +58,14 @@
             </form>
         </div>
     </div>
+    </div>
+    </div>
 
     <script>
         document.getElementById('editForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('수정이 완료되었습니다');
-            window.location.href = 'myPage.jsp';
+            window.location.href = "${pageContext.request.contextPath}/mypage";
         });
     </script>
 </body>
